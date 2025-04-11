@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/gamestorepng-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="./img/gamestorepng-removebg-preview.png" alt="" style="width: 50px;"></a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="listamenu">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Jogos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Console
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-xbox"></i>Xbox</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-nintendo-switch"></i> Nintendo</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-playstation"></i> playstation</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn " type="submit" id="buscar"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section id="carrocel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/xbox.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/ps_resized.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/nintendo_resized.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section id="cardes" class="row justify-content-center gap-4 my-5">
+            <!-- PS5 Card -->
+            <div class="card col-md-3 promo-card">
+              <img src="./img/venderPS5.webp" class="card-img-top" alt="PlayStation 5">
+              <div class="card-body text-center">
+                <h5 class="card-title">Promoção PS5</h5>
+                <p class="card-text">Adquira seu PlayStation 5 com até <strong>20% de desconto</strong> por tempo limitado!</p>
+                <a href="#" class="btn btn-outline-light btn-lg  bg-primary">Comprar Agora</a>
+              </div>
+            </div>
+          
+            <!-- Xbox Card -->
+            <div class="card col-md-3 promo-card">
+              <img src="./img/venderXbox.webp" class="card-img-top" alt="Xbox One">
+              <div class="card-body text-center">
+                <h5 class="card-title">Oferta Xbox One</h5>
+                <p class="card-text">Console Xbox One em promoção! Ganhe <strong>frete grátis</strong> em todo o Brasil.</p>
+                <a href="#" class="btn btn-outline-light btn-lg bg-success">Comprar Agora</a>
+              </div>
+            </div>
+          
+            <!-- Nintendo Switch Card -->
+            <div class="card col-md-3 promo-card">
+              <img src="./img/nintendovender.jpg" class="card-img-top" alt="Nintendo Switch">
+              <div class="card-body text-center">
+                <h5 class="card-title">Nintendo Switch</h5>
+                <p class="card-text">Leve diversão para toda familia com o Switch! <strong>10% OFF</strong> à vista!</p>
+                <a href="#" class="btn btn-outline-light btn-lg bg-danger">Comprar Agora</a>
+              </div>
+            </div>
+          </section>
+          
+          <section id="promo">
+            <div class="promo-content">
+              <p>Compre jogos com até 90% de desconto</p>
+              <a href="#">Comprar</a>
+            </div>
+          </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
